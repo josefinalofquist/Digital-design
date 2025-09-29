@@ -1,0 +1,62 @@
+html, body {
+  margin: 0;
+  background: #efefef;
+}
+
+main {
+  max-width: 1100px;
+  margin: 16px auto 40px;
+  padding: 0 16px;
+}
+
+h1 {
+  margin: 0 0 16px;
+  font-family: Georgia, serif;
+  font-size: 32px;
+}
+
+/* Gemensamt för varje hundruta */
+.box {
+  padding: 14px 16px;
+  margin: 12px 0;
+  line-height: 1.5;
+  border-width: 8px;
+  border-style: solid;
+}
+
+.box h2 {
+  margin: 0 0 10px;
+  font-size: 28px;
+}
+
+/* Tysnitt som ska vara med: monospace, Georgia, Helvetica, Arial, Verdana. 
+Färger som ska vara med: chocolate, goldenrod, beige, yellowgreen, thistle. */
+
+#basenji {
+  background-color: beige;
+  border-color:   rgb(207, 207, 187);
+  font-family: Helvetica;
+}
+
+#bichon-frise {
+  background-color: goldenrod;
+  border-color:  rgb(252, 219, 137);
+  font-family: Verdana;
+}
+
+#boston-terrier {
+  background-color: chocolate;
+  border-color:  rgb(248, 160, 98);
+  font-family: Georgia;
+}
+
+#dachshund {
+  background-color: #D8BFD8;     /* thistle */
+  border-color:   #C7A3C7;       /* mörkare ton */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#miniature-pinscher {
+  background-color: yellowgreen;
+  border-color:  rgb(118, 158, 39);
+  font-family: monospace;

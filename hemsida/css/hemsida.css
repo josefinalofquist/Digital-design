@@ -1,0 +1,152 @@
+/* Färger + Typsnitt */
+:root {
+   --primary: #ffb7e7;                 /*Textfärg, inkl rubriker */
+   --secondary: #eb2fa3;               /* Länkar */
+   --header: #000000;                  
+}
+
+@font-face {
+   font-family: "Font1";
+   src: url("../fonts/GravitasOne-Regular.ttf");
+}
+
+@font-face {
+   font-family: "Font2";
+   src: url("../fonts/Lexend-Medium.ttf");
+}
+
+
+/* Grundinställningar */
+body { 
+   color: var(--primary);  
+   text-align: center;
+   background-image: url("../images/Moon.JPG");
+   background-size: cover;
+   background-position: center;
+   font-family: "Font2";
+}
+
+h1,h2,h3 {
+   font-family: "Font1";
+   color: var(--primary);
+   margin: 0;
+}
+
+a {
+   font-family: "Font1";
+   color: var(--secondary);
+   text-decoration: none;
+}
+
+a:hover {
+   color: white;
+   text-decoration: underline;
+}
+
+/* Återanvändbara bakgrundsklasser */
+.bg-moon { background: url("../images/Moon.JPG") center/cover no-repeat; }
+.bg-planet { background: url("../images/Planet.jpg") center/cover no-repeat; }
+.bg-heart { background: url("../images/Heart.JPG") center/cover no-repeat; }
+
+
+/* Cards */
+.card {
+   border-radius: 20px 20px 0px 0px;
+   padding: 20px;
+}
+
+/* Start */
+.Me-content {
+   width: 100%;
+   max-width: 1000px;
+   margin: auto;  
+}
+
+.Me-title {
+   font-size: 35px;
+}
+
+.Me-image {
+   max-width: 100%;
+   width: 500px;
+   border-radius: 50%;
+}
+
+.Start-card {
+border-radius: 0px;
+}
+
+.Me-text {
+   text-align: left;
+   padding: 10px;
+} 
+
+/* Header + navigation */
+.header {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 15px;
+   background-color: var(--header);
+   border-radius: 20px 20px 0px 0px;
+   font-size: 25px;
+}
+
+.nav ul {
+   display: flex;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   gap: 30px;
+}
+
+/* Hobby sida */
+#Hobby-section h2 {
+   margin-bottom: 15px;
+}
+
+.Hobby-pics {
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   flex-wrap: nowrap;
+}
+
+.Hobby-item {
+   flex: 1;
+   max-width: 300px;
+   min-width: 0;
+}
+
+.Hobby-item img {
+   width: 100%;
+   aspect-ratio: 3/4;
+   object-fit: cover;
+   padding: 10px;
+   border-radius: 20px;
+}
+
+.Hobby-list {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 25px;
+   flex-wrap: wrap;
+}
+
+.Tarot-list {
+   line-height: 1.7;
+}
+
+/* Utbildning + Hobby sida */
+.Section-title {
+   font-size: 25px;
+   margin-top: 50px;
+   margin-bottom: 10px;
+}
+
+.Section-block {
+   text-align: left;
+
+}
+

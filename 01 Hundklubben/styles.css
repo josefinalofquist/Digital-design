@@ -1,0 +1,25 @@
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Helvetica
+}
+
+.box {
+color: white;
+background-color: steelblue;
+border: 30px solid deepskyblue;
+max-width: 500px;
+padding:70px 35px;
+text-align: center;
+font-size: 56px;
+line-height: 1.3;
+overflow: hidden;
+}

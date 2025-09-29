@@ -1,0 +1,24 @@
+.dot {
+width: 50px;
+height: 50px;
+border-radius: 50%
+}
+
+.gold {
+    background-color: goldenrod;
+    border: 25px solid gold;
+    margin-left: auto;
+}
+
+.green {
+    background-color: green;
+    border: 25px solid yellowgreen;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blue {
+    background-color: skyblue;
+    border: 25px solid steelblue;
+    margin: 0;
+}

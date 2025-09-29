@@ -1,0 +1,75 @@
+/* 1. Grundinställningar */
+body {
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* 2. Huvudcontainer */
+.fruits {
+    width: 100%;
+    display: block;
+}
+
+/* 3. Varje fruktcontainer */
+.fruit {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;          /* avstånd mellan bild och text */
+}
+
+/* Specifika färger per frukt */
+.fruit.lemon { background-color: #fafa80;}
+.fruit.apple { background-color: #f76060;}
+.fruit.kiwi { background-color: #4e964e;}
+.fruit.strawberry { background-color: #f54242;}
+
+/* Bilder */
+.fruit img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;  /*ser till att bilden fyller cirkeln */
+}
+/* Lemon + strawberry*/
+.fruit.lemon img,
+.fruit.strawberry img {
+    margin-left: 70px;
+}
+
+/* Apple + kiwi */
+.fruit.apple img,
+.fruit.kiwi img {
+    margin-left: 40px;
+}
+
+/* Textdelen */
+.fruit-text {
+    display: flex;
+    flex-direction: column;
+}
+/* Rubriker */
+.fruit-text h2 {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.fruit-text p {
+    margin: 5px 0;
+}
+
+.fruit-text a {
+    margin-top: 5px;
+    color: black;
+    text-decoration: underline;
+}
+
+/* Responsivitet */
+@media (max-width: 600px) {
+    .fruit {
+        flex-direction: column;
+        text-align: center; /*centrera texten under bilden */
+    }
+}

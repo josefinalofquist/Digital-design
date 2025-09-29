@@ -1,0 +1,29 @@
+.body {
+    margin: 0;
+    background-color: beige;
+    height: 100vh;
+}
+
+.square {
+    width: 25vw;
+    height: 25vh;
+}
+
+.blue {
+    background-color: skyblue;
+}
+
+.red {
+    background-color: tomato;
+    margin-left: 25%;
+}
+
+.green {
+    background-color: olivedrab;
+    margin-left: 50%;
+}
+
+.yellow {
+    background-color: gold;
+    margin-left: 75%;
+}

@@ -1,0 +1,31 @@
+.body {
+    font-family: Helvetica;
+    font size: 20px;
+}
+
+.box-background {
+    background-color: blue;
+    height: 50px;
+    border-bottom: 2px;
+}
+
+.box {
+background-color: skyblue;
+display: inline;
+
+}
+.1 {
+
+}
+
+.2 {
+ 
+}   
+
+.3 {
+
+}
+ 
+/* Info: - Färger som används: white, #dcedf5, #0088cc, #07577e.
+- Länkarna har en `border-bottom` som har en bredd på `2px`.
+- Typsnittet är Helvetica och typsnittsstorleken är `20px`. /*
