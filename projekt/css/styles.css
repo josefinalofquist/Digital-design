@@ -1,0 +1,476 @@
+/* ROOT */
+:root {
+/* Färger */
+--color-black-deep: #050505;
+--color-black: #121212;
+--color-gray-dark: #353535;
+--color-gray: #666666;
+--color-gray-light: #999999;
+--color-border: #e5e5e5;
+--color-bg-light: #f4f4f4;
+--color-bg: #ffffff;
+
+/*Färger för projektet*/
+--color-primary: var(--color-black);
+--color-primary-hover: var(--color-gray-dark);
+--color-text: var(--color-black-deep);
+--color-text-light:var(--color-gray);
+--color-background:var(--color-bg);
+
+/*Knappar */
+--color-btn-text: #fff;
+--color-btn-border: var(--color-black);
+
+/*Typsnittstorlekar*/
+--font-huge: 53px;
+--font-xxl: 45px;
+--font-xl: 36px;
+--font-large: 24px;
+--font-small: 15px;
+--font-xs: 13px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Font*/
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter.ttf");
+}
+
+/* BASINSTÄLLNINGAR */
+body {
+    font-family: "Inter", sans-serif;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    overflow-x: hidden;
+    text-align: center;
+}
+
+/* Header + Navbar */
+.header {
+    top: 0;
+    position: sticky;
+    background-color: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+    width: 100%;
+    font-weight: 500;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+} 
+.nav-left {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 32px;
+}    
+.logo img {
+    height: 28px;
+    display: block;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 28px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: var(--color-gray);
+    font-size: 15px;
+}
+
+/* Höger nav */
+.nav-right {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 24px;
+}
+.nav-link {
+    text-decoration: none;
+    color: var(--color-text-light);
+}
+
+.login {
+    padding-left: 24px;
+    border-left: 1px solid var(--color-border);
+}
+
+.btn.primary {
+    background: var(--color-primary);
+    color: var(--color-btn-text);
+    padding: 12px 18px;
+    border-radius: 6px;
+    text-decoration:none;
+
+}
+/* Hemsida content */
+.container {
+    max-width:1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 100px 0;
+    align-items: center;
+}
+.hero-content {
+    flex-grow: 1;
+    text-align: left;
+    max-width: 480px;
+}
+.hero-content h1{
+    font-size: var(--font-xxl);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 16px;
+} 
+.hero-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 28px;
+    color: var(--color-gray);
+}
+.hero-image {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* COMPANIES BAR */
+.companies {
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    padding: 40px 0;
+    margin-top: 40px;
+}
+.company-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+}
+.company-logos img {
+    height: 28px;
+    width: auto;
+    display: block;
+}
+/* FETCH + KENNEL + PUPS SEKTION */
+
+.dog-content {
+    padding-top: 50px;
+}
+
+.dog-text {
+    flex: 1;
+    text-align: left;
+    max-width: 500px;
+    margin-bottom: 24px;
+}
+.dog-text h2 {
+    font-size: var(--font-xl);
+    margin-bottom: 16px;
+    color: var(--color-text);
+}
+.dog-text p {
+color: var(--color-text-light);
+line-height: 1.6;
+font-size: 16px;
+max-width: 650px;
+}
+.dog-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+.about-section {
+    margin: 40px auto;
+    text-align: center;
+}
+.about-section blockquote {
+    color: var(--color-text-light);
+    line-height: 1.5;
+    font-size:36px;
+    max-width: 900px;
+    margin: 0 auto 32px auto;
+}
+
+.writer {
+    display: flex;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+.writer img {
+width: 40px;
+height: 40px;
+border-radius: 50%
+}
+.info-writer {
+    text-align: left;
+}
+.name-writer {
+    font-weight: 600;
+    color: var(--color-text);
+    font-size: 15px;
+    display: block;
+}
+.title-writer {
+font-size: 13px;
+color: var(--color-text-light);
+display: block;
+}
+
+/* FREE PLAN SECTION */
+.free-plan {
+    max-width: 900px;
+    text-align: center;
+    margin: 80px auto;
+    align-items: center;
+}
+.free-plan-content {
+    max-width: 600px;
+    margin: 0 auto 16px;
+    align-items: center;
+    text-align: center;
+}
+.free-plan-content p, h2 {
+    margin: 0 auto 25px auto;
+}
+.plan-wrapper {
+    background-color: #f4f4f4;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 40px;
+    max-width: 600px;
+    margin: 40px auto 0 auto;
+}
+.plan-header {
+    display: flex;
+    font-weight: 600;
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+}
+.plan-header .col-left {
+    flex-grow: 1;
+    text-align: left;
+    font-weight:600;
+}
+.plan-header .col-right {
+    text-align: right;
+    font-weight: 600;
+}
+.plan-row {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--color-border);
+    padding: 12px 0;
+}
+.plan-row p {
+    flex-grow: 1;
+    margin: 0;
+    font-size: 15px;
+    color: var(--color-text-dark);
+    text-align: left;
+}
+
+.plan-row img {
+   width: 16px;
+   height: auto;
+}
+
+/* Build for every team */
+.built-for-teams {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.built-for-teams h2 {
+    font-size: var(--font-xl);
+    margin: 60px 0 10px 0;
+    border-top: 1px solid var(--color-border);
+    padding-top: 50px;
+}
+.built-for-teams .section-intro {
+    color: var(--color-text-light);
+    margin-bottom: 40px;
+}
+/* Grid med tre kort */
+.team-grid {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.team-card {
+    flex: 1;
+    flex-grow: 1;
+    text-align: center;
+    padding: 0 24px;
+}
+.team-card a,p {
+    color: var(--color-black);
+    margin: 10px;
+}
+.team-card p {
+    color: var(--color-text-light);
+}
+
+.team-card:nth-child(2) {
+    border-left: 1px solid var(--color-border);
+    border-right: 1px solid var(--color-border);
+}
+
+/* See why dogs love us */
+.proof {
+    padding: 80px 0;
+}
+.proof-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 24px;
+    text-align: center;
+}
+.prooh h2 {
+    font-size: 36px;
+    margin-bottom:60px;
+} 
+.proof-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    text-align: left;
+}
+.proof-text h3 {
+    font-size: 16px;
+    line-height: 1.6;
+}
+.proof-text a {
+    color: var(--color-black);
+}
+.proof-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.ratings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-gray);
+}
+.rating-item {
+    flex: 1;
+    flex-grow: 1;
+    border-right: 1px solid var(--color-border);
+    margin-bottom: 70px;
+}
+.rating-item:last-child {
+    border-right: none;
+}
+.rating-item h2 {
+    font-size: var(--font-huge);
+}
+
+/* HÄR DET INTE FUNKAR - SISTA BTN */
+    
+
+/* FOOTER */
+.footer {
+    border-top: 1px solid var(--color-border);
+    margin: 0 auto;
+    padding: 60px 0;
+    margin-top: 80px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.footer-left {
+    flex-grow: 1;
+    flex-basis: 250px;
+}
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+.footer-logo {
+   width: 100px;
+   height: auto;
+}
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.social-icons img {
+    width: 20px;
+    height: 20px;
+}
+.social-icons img:hover {
+    opacity: 1;
+}
+.footer-right {
+    flex-grow: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-col {
+    flex-grow: 1;
+    flex-basis: 150px;
+}
+
+.footer-col h4 {
+font-size: 14px;
+color: var(--color-text-dark)
+}
+
+.footer-col ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-col li {
+    margin-bottom: 6px;
+}
+
+.footer-col a {
+    text-decoration: none;
+    color: var(--color-text-light);
+    font-size: 13px;
+}
+
