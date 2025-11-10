@@ -90,6 +90,19 @@ body {
     font-size: 15px;
 }
 
+.nav-links a:hover {
+    color: black;
+} 
+
+.nav-links img {
+    width: 15px;
+    height: auto;
+    margin-left: 6px;
+    margin-bottom: -1px; /* ändra denna sen */
+    position: relative;
+}
+
+
 /* Höger nav */
 .nav-right {
     flex-grow: 1;
@@ -116,6 +129,19 @@ body {
     text-decoration:none;
 
 }
+
+.hamburger-menu {
+    display: none;
+    background: none;
+    cursor: pointer;
+    border: none;
+}
+
+.hamburger-menu img {
+    display: block;
+    height: 24px;
+}
+
 /* Hemsida content */
 .container {
     max-width:1000px;
@@ -247,18 +273,22 @@ display: block;
 }
 
 /* FREE PLAN SECTION */
-.free-plan {
+.free.plan {
+    padding-top: 60px;
     max-width: 900px;
     text-align: center;
     margin: 80px auto;
     align-items: center;
+    border-top: 1px solid var(--color-border);
+
 }
 .free-plan-content {
     max-width: 600px;
     margin: 0 auto 16px;
     align-items: center;
     text-align: center;
-}
+   }
+
 .free-plan-content p, h2 {
     margin: 0 auto 25px auto;
 }
@@ -474,33 +504,111 @@ color: var(--color-text-dark)
     font-size: 13px;
 }
 
+/* Mobil anpassning */
 @media (max-width: 600px) {
    .navbar {
     padding: 15px 20px;
   }
-
-  .nav-left,
-  .nav-right {
+  .nav-links, 
+  .nav-right .nav-link, 
+  .nav-right .btn.primary {
     display: none;
   }
 
+  .hamburger-menu {
+    display: block;
+  }
 
   .hero {
     flex-direction: column-reverse;
     text-align: center;
-    padding: 60px 0;
-    gap: 40px;
   }
-  .proof-content{
+
+  .hero-content {
+    text-align: center;
+    max-width: none;
+  }
+
+  .dog-content  {
    flex-direction: column-reverse;
+   text-align: center;
+   align-items: center;
+   max-width: none;
   }
 
- 
-  .ratings-container {
-   display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    color: var(--color-gray);
-  }  
-}  
+  .dog-text {
+    text-align: center;
+    max-width: none;
+    }
 
+    .dog-text p {
+        max-width: none;
+    }
+
+    .free.plan {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .built-for-teams.container .team-grid {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .built-for-teams.container .team-card {
+        flex: 1 1 auto;
+        align-self: center;
+        border: none;
+    }
+
+    .proof-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .proof-text {
+        text-align: left;
+    }
+
+    .proof-text h3 {
+        padding-left: 10px;
+    }
+
+    .ratings-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .rating-item {
+        border: none;
+    }
+
+    .footer-content {
+    flex-direction: column;
+    gap: 0px;
+    }
+
+    .footer-right {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .footer-col h4 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .footer-left {
+        flex-basis: auto;
+        flex-grow: 0;
+    }
+
+    .footer-left p {
+        padding: 10px 10px 10px 0;
+        margin-left: 0;
+        
+    }
+   
+
+}
