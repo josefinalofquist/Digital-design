@@ -1,0 +1,18 @@
+1) Beskriv funktionen foo
+
+Funktionen foo har två parametrar: a och e.
+
+Om a inte är en array ger foo felet "Not an array".
+
+Annars returnerar foo:
+  - -1 om e (strikt lika) inte finns i arrayen a
+  - annars indexet av e i arrayen
+
+
+
+2) Vilka värden kommer tilldelas test-variablerna?
+
+test1 tilldelas värdet 3
+test2 tilldelas värdet -1
+test3 ger Error "Not an array"
+test4 tilldelas värdet -1

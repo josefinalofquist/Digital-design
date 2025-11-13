@@ -1,0 +1,16 @@
+1) Beskriv funktionen foo
+
+Funktionen foo tar emot ett argument: a
+
+Om a inte är en array ger foo felet "Not an array".
+Om a är en array men dess element inte har samma typ fer foo felet "Not the same type"
+
+Annars returnerar foo en ny array som innehåller alla element i a men sorterade från lägst till högst.
+
+
+2) Vad kommer att loggas vid testerna?
+
+Testet:
+  loggar [-1, 3, 6, 7]
+  loggar ["agneta", "aida", "alexandra", "aruba"]
+  ger Error "Not the same type"

@@ -1,0 +1,14 @@
+1) Beskriv funktionen foo
+
+Funktionen foo tar emot ett argument: a
+
+Om a inte är en array ger foo felet "Not an array".
+
+Annars returnerar funktionen foo ett slumpmässigt element från a
+
+
+2) Vad kommer att loggas vid testerna?
+
+Test1 loggar 10 slumpmässiga heltal mellan 1 och 10, båda inklusive
+Test2 loggar 6 slumpmässiga bokstäver mellan "a" och "f", båda inklusive
+Test3 ger Error "Not an array"

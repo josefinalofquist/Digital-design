@@ -1,0 +1,12 @@
+
+Funktionen bar tar emot ett argument x. Den kontrollerar att x är en sträng och ger Error "Not a string" om den inte är det.
+
+Om x är en sträng så returnerar funktionen ett objekt där varje gemen bokstav (endast engelska bokstäver a-z) i x utgör en nyckel, och värdet av nyckeln är antalet gånger som den bokstaven förekommer i x.
+
+
+Testet:
+  loggar {a: 1, b: 1, c: 1}
+  loggar {a: 2, b: 2, c: 3}
+  loggar {s: 4, y: 2, o: 2, u: 1, w: 1, e: 2, r: 1, a: 2, i: 2, n: 2, g: 1, t: 1, m: 2, l: 1}
+  ger Error "Not a string"
+

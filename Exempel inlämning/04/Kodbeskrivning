@@ -1,0 +1,10 @@
+Funktionen foo har två parametrar: a och e
+
+Om a inte är en array ger foo felet "Not an array".
+
+Funktionen foo returnerar en ny array där första elementet är antalet gånger som e finns i a (strikt lika med) och andra elementet är antalet gånger som e finns i a (lika med)
+
+test1 tilldelas värdet [1, 1]
+test2 tilldelas värdet [0, 0]
+test3 tilldelas värdet [2, 4] // true == 1 !
+test4 ger Error "Not an array"

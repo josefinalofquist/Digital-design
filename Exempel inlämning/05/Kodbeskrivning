@@ -1,0 +1,13 @@
+Funktionen foo tar emot två argument: x och y. Den kontrollerar om båda värden är strängar och ger Error "Not a string in foo" om inte båda är det.
+Om båda är strängar returnerar foo true om tecknet y finns i x, annars false.
+
+
+Funktionen bar tar emot ett argument x. Den kontrollerar att x är en sträng och ger Error "Not a string in bar" om den inte är det.
+Om x är en sträng så ber funktionen användaren om en gemen bokstav och kontrollerar att det användaren har matat in är en sträng med bara ett tecken och att tecknet är en gemen bokstav i engelska alfabetet.
+Så länge det användaren matar in inte är en gemen bokstav (a-z) kommer programmet att fortsätta be om den.
+Efter det att användaren har matat in en giltig bokstav så skapar programmet en array med alla ord i x som innehåller den bokstaven åtminstone en gång.
+
+
+test1 loggar värdet ["dream", "meaning", "men", "dream", "former", "former"]
+test2 loggar 3
+test3 ger Error "Not an string in bar"

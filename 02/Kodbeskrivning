@@ -1,0 +1,15 @@
+1) Beskriv funktionen foo
+
+Funktionen foo tar emot ett argument: a
+
+Om a inte är en array ger foo felet "Not an array".
+
+Funktionen foo returnerar en ny array som har samma element som a men i omvänd ordning.
+
+
+2) Vilka värden kommer tilldelas test-variablerna?
+
+test1 tilldelas värdet [4,5,6,9,1]
+test2 tilldelas värdet []
+test3 tilldelas värdet [false, true]
+test4 ger Error "Not an array"
