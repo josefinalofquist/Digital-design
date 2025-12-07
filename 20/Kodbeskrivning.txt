@@ -1,0 +1,15 @@
+Funktionen indexOfLetter tar emot två argument: string och letter.
+Funktionen ger error om:
+  - string och letter inte båda är string, eller
+  - om letter inte har length = 1
+
+Funktionen skulle returnera:
+  - indexet av den första förekomsten av letter i string
+  - -1, om letter inte finns i string
+
+MEN den fungerar inte som den ska, eftersom:
+indexOfLetter("abc", "a") ger 0 (det är korrekt)
+indexOfLetter("abc", "b") ger -1 (det är inte korrekt, borde vara 1)
+
+Var är buggen?
+Hur löser man det?

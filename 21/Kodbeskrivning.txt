@@ -1,0 +1,10 @@
+
+Funktionen addItem tar emot två argument: originalArray och item.
+Funktionen ger error om originalArray inte är en array.
+
+Funktionen ska returnera en ny array som har samma element som originalArray plus item, utan att ändra på originalArray.
+
+MEN den gör inte så.
+Om du kör programmet kan du se att originalArray har blivit ändrat.
+
+Vad är problemet och hur skulle vi kunna undvika det?

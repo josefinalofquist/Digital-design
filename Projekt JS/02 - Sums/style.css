@@ -1,0 +1,25 @@
+#control {
+  display: flex;
+  gap: 10px;
+}
+
+#control input {
+  width: 50px;
+}
+
+#numbers {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2px;
+}
+#numbers > div {
+  text-align: center;
+  padding: 5px 0;
+  border: 1px solid black;
+  border-radius: 5x;
+
+  &:hover {
+    box-shadow: 0 0 5px black;
+    cursor: pointer;
+  }
+}

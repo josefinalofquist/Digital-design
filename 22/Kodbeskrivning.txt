@@ -1,0 +1,9 @@
+1) Beskriv funktionen foo
+
+
+
+2) Vad kommer att loggas vid testet?
+
+
+
+3) Föreslå bättre funktionsnamn, variabelnamn och texter. 

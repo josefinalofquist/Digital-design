@@ -1,0 +1,17 @@
+#image {
+  width: 80%;
+  height: 300px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  background-image: url(mau.jpg);
+  background-size: cover;
+}
+#image > div {
+  background-color: grey;
+  border: 1px solid white;
+  &:hover {
+    border: 1px solid black;
+    cursor: pointer;
+  }
+}

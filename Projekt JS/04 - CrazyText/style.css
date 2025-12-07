@@ -1,0 +1,10 @@
+body {
+  background: black;
+  padding: 20px;
+}
+
+#text-container {
+  width: 90%;
+  margin: auto;
+  line-height: 2.2rem;
+}

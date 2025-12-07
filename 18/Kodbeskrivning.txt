@@ -1,0 +1,9 @@
+1) Beskriv vad programmet gör
+
+
+
+2) Föreslå bättre namn på alla variabler och texter
+
+
+
+3) Programmet loggar namn + efternamn av fem studenter. Vilka studenter?

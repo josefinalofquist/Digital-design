@@ -100,7 +100,6 @@ body {
     background-color: var(--color-bg-light);
 } 
 
-
 /* Höger nav */
 .nav-right {
     flex-grow: 1;
